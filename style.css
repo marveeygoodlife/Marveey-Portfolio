@@ -71,9 +71,9 @@ header {
   /* make toggle bar  ontop each other */
   justify-content: space-between;
   /* add space between toggle bars */
-  width: 35px;
+  width: 50px;
   /* button toggle  width */
-  height: 30px;
+  height: 50px;
   /* toggle button height */
   cursor: pointer;
   /* change cursor to pointer on hover*/
