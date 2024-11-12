@@ -1,0 +1,499 @@
+/* DEFAULT STYLE FOR MOBILE DEVICES! CONSIDERING DESIGNING FOR USER FIRST IS A GOOD PRACTICE BECAUSE MOST PEOPLE USE PHONE NOWADAYS */
+
+/* Custom properties/variables */
+:root {
+  --main-white: #f0f0f0;
+  --main-red: #be3144;
+  --main-blue: #45567d;
+  --main-gray: #303841;
+  --main-off-white: #F5F5F5;
+  --main-light-gray: #F0F0F0;
+  --menu-toggle-dark: #333;
+}
+
+/* General Styles */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--main-gray);
+  font-size: 1.6rem;
+  font-family: 'Poppins', sans-serif, Tahoma, monospace;
+  color: var(--main-off-white);
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+}
+
+.h1span {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+div.reverse,
+.h1span {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+/* General style ends */
+
+
+/* Header Styles */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--main-red);
+  z-index: 100;
+  padding: 10px;
+}
+
+/* Header style ends */
+
+/* Navigation Styles start*/
+
+.nav-toggle {
+  display: flex;
+  /* set toggle to flex */
+  flex-direction: column;
+  /* make toggle bar  ontop each other */
+  justify-content: space-between;
+  /* add space between toggle bars */
+  width: 35px;
+  /* button toggle  width */
+  height: 30px;
+  /* toggle button height */
+  cursor: pointer;
+  /* change cursor to pointer on hover*/
+}
+
+/* toggle span- bar style */
+.nav-toggle .bar {
+  width: 100%;
+  /* make each bar take the toggle width */
+  height: 3px;
+  /* bar height */
+  background-color: var(--menu-toggle-dark);
+}
+
+/* toggle span- bar style end */
+
+.nav {
+  display: none;
+  /* hide the nav on small device to show the toggle button */
+  flex-direction: column;
+  /* make the navstack vertically */
+}
+
+.nav.active {
+  display: flex;
+  /* turn the display to flex from none when toggle button is clicked */
+}
+
+.navlist {
+  list-style: none;
+  /* remove list style decoration */
+  padding: 0;
+  /* remove padding */
+}
+
+.navlist a {
+  text-decoration: none;
+  /* remove text decoration */
+  color: var(--main-white);
+  padding: 10px;
+  width: 70%;
+  display: block;
+}
+
+.navlist a:hover {
+  text-decoration: none;
+}
+
+.navlist:visited {
+  color: var(--main-light-gray);
+}
+
+/* add focus to link */
+.navlist a:focus {
+  outline: 2px solid var(--main-red);
+  /* outline color, useful for accessibility purposes e.g navigating with keyboard */
+  background-color: var(--main-light-gray);
+  color: var(--main-blue);
+  /* change text color */
+  border-radius: 5px;
+  /* rounded corners */
+}
+
+/* Navigation style ends */
+
+/* Typography */
+h1,
+h2 {
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  color: var(--main-white);
+  font-size: 2rem;
+  margin-left: 20px;
+}
+
+p {
+  color: var(--main-white);
+  font-size: 1.1rem;
+  padding: 20px;
+}
+
+/* Aside style  */
+aside {
+  margin-top: 5rem;
+}
+
+/* Aside style ends here */
+/* Base Style for Links - Mobile First */
+a:link {
+  color: var(--main-light-gray);
+  font-weight: 600;
+  font-size: 1.3rem;
+  /* Mobile font size */
+  text-decoration: none;
+  padding: 10px;
+}
+
+a:visited {
+  color: var(--main-off-white);
+}
+
+/* Hover Style */
+a:hover {
+  color: var(--main-red);
+  background-color: var(--main-off-white);
+  text-decoration: underline;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+a:active {
+  color: var(--main-light-gray);
+}
+
+/* Default link style ends here */
+
+/* Footer Styles */
+footer {
+  background-color: var(--main-red);
+  padding: 20px;
+}
+
+footer .anchor {
+  display: flex;
+  flex-direction: column;
+}
+
+footer h2 {
+  font-size: 1.2rem;
+}
+
+/* Footer style ends here */
+
+
+/* Image Styles */
+img {
+  display: block;
+}
+
+.project-section {
+  position: relative;
+  padding: 2rem;
+  background-color: var(--main-gray);
+  color: var(--main-off-white);
+  text-align: center;
+}
+
+.myProjects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-item {
+  position: relative;
+  background-color: var(--main-light-gray);
+  border-radius: 10px;
+  padding: 1rem 3rem;
+  margin: 0 1rem;
+  max-width: 350px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.658);
+}
+
+.project-images {
+  /* responsive image */
+  position: relative;
+  width: 100%;
+  padding-top: 15px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-images:hover {
+  transform: scale(1.1);
+}
+
+.project-item p {
+  font-size: 1.1rem;
+  width: 100%;
+  text-align: left;
+  margin: 0.5rem 0;
+  color: var(--main-gray);
+  font-weight: bold;
+}
+
+.project-item .h3p {
+  font-size: 1.5rem;
+  color: var(--main-gray);
+  margin-top: 1.1rem;
+  margin-bottom: auto;
+}
+
+.project-item a {
+  display: inline-block;
+  margin-top: 1rem;
+  color: var(--main-red);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.project-item a:hover {
+  text-decoration: underline;
+}
+
+#projects {
+  margin: 1rem auto;
+}
+
+/* General image style ends here */
+
+
+/* MEDIUM SCREEN FOR TABLETS */
+/* THIS style become active when the device is 600px and higher */
+@media (min-width: 600px) {
+  body {
+    font-size: 2.1rem;
+  }
+
+  header {
+    height: 70px;
+  }
+
+
+  .h1span {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  /* Navigation links */
+  /* Hide the hamburger button on larger screens */
+  .nav-toggle {
+    display: none;
+  }
+
+  /* Display the normal nav list on larger screens */
+  .nav {
+    display: block;
+    /* Show the nav */
+    position: static;
+    /* Reset position */
+  }
+
+
+
+  /* Display nav items in a row on tablets and desktops */
+  .navlist {
+    display: flex;
+    /* Flexbox for horizontal layout */
+    justify-content: flex-end;
+    gap: 20px;
+  }
+
+  /* Navigation links */
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 20px;
+  }
+
+  li a:link {
+    font-size: 2rem;
+    margin-right: 20px;
+  }
+
+  h1,
+  h2 {
+    font-size: 2.5rem;
+    margin-left: 20px;
+  }
+
+  .project-item p {
+    font-size: 1.1rem;
+
+  }
+
+  .project-item h3 {
+    font-size: 2rem;
+
+  }
+
+  .project-item a {
+    font-size: .5em;
+  }
+
+  aside,
+  main {
+    margin-top: 8rem;
+  }
+
+  footer .anchor {
+    display: flex;
+    flex-direction: row;
+  }
+
+  footer h2 {
+    font-size: 1.3rem;
+  }
+
+  footer .paragraph {
+    font-size: 1rem;
+  }
+
+  small {
+    font-size: 1.1rem;
+  }
+}
+
+/* LARGER SCREEN FOR DESKTOP */
+/* This style becomes active when the device is 1024px and higher
+*/
+@media (min-width: 1024px) {
+  body {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "main main aside"
+      "footer footer footer";
+  }
+
+  header {
+    height: 100px;
+    border-bottom: 5px solid var(--main-blue);
+  }
+
+  aside .h1 {
+    font-size: 7rem;
+  }
+
+  h2 {
+    font-size: 5rem;
+  }
+
+  #projects .h3 {
+    font-weight: 20rem;
+    margin: 1rem auto;
+  }
+
+  .h1span {
+    font-size: 3rem;
+  }
+
+  ul {
+    justify-content: flex-end;
+    gap: 50px;
+  }
+
+  li a:link {
+    font-size: 2.5rem;
+  }
+
+  main {
+    grid-area: main;
+  }
+
+  aside {
+    grid-area: aside;
+  }
+
+  p {
+    font-size: 2.1rem;
+  }
+
+  aside,
+  main {
+    margin-top: 10rem;
+  }
+
+  .project-item {
+
+    max-width: 500px;
+    height: auto;
+  }
+
+  .project-item p {
+    font-size: 2rem;
+
+  }
+
+  .project-item .h3p {
+    font-size: 4rem;
+
+  }
+
+  .project-item a {
+    font-size: 1.9rem;
+  }
+
+  footer {
+    grid-area: footer;
+    margin-top: 5rem;
+  }
+
+  footer .anchor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  footer .anchor a {
+    font-size: 2.3rem;
+  }
+
+  footer h2 {
+    font-size: 3rem;
+  }
+
+  footer p.paragraph {
+    font-size: 2.2rem;
+  }
+
+  small {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+  }
+}
