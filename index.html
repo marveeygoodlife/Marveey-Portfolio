@@ -4,33 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="author" content="Marveey" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://kit.fontawesome.com/184a11b74d.js"
-      crossorigin="anonymous"
-    ></script>
-
     <meta name="description" content="This is a portfolio website" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap"
-      rel="stylesheet"
-    />
     <title>Portfolio website</title>
   </head>
 
   <body>
     <!-- Start Navigation -->
-    <header>
+    <header id="main-header">
       <button class="nav-toggle" aria-label="Toggle navigation">
         <span class="bar"></span>
         <span class="bar"></span>
@@ -39,7 +20,7 @@
       <nav id="navbar" class="nav">
         <ul class="navlist">
           <li><a href="index.html">Home</a></li>
-          <li><a href="#aboutme">About</a></li>
+          <li><a href="about.html" style="width: max-content">About Me</a></li>
 
           <li><a href="#projects">Project</a></li>
           <li><a href="#Contact">Contact</a></li>
@@ -48,210 +29,198 @@
     </header>
     <!-- End  Navigation -->
 
-    <aside>
-      <div class="reverse">
-        <h1 class="h1">
-          Marvellous Ediagbonya
-          <span class="h1span">Website Developer</span>
-        </h1>
-      </div>
-      <p>
-        Hello! I am a Student and a Website Developer. I am from Edo State
-        Nigeria. <br />
-        I have always been curious to know how the web work, I have often asked
-        myself; "How's it that there are different websites only? How does it
-        get there? Can I do something similar?. I often ask myself this question
-        until I researched and found out how it works. I was intrigued and since
-        then my passion for it has increased, I made a vow to make interactive,
-        User-friendly and stylish website.. <br />
-        To master this skill I decide to learn about HTML, CSS and Javascript to
-        understand how the client side of web development works before I will go
-        on to master the server side.
-      </p>
-    </aside>
-
-    <!-- Start Welcome Section -->
     <main>
-      <div class="grid-containr">
-        <!--My projet section-->
-        <div class="div-container">
-          <section class="about-section" id="aboutme">
-            <h2>About Me</h2>
-            <p class="leftp">
-              As someone passionate about web development, I like the creativity
-              and problem-solving that comes with building stylish and user
-              friendly website. I love that I can turn a challenge into a
-              dynamic experience online. From writing Html code to styling with
-              Css to ensure it's beautiful, I take pride in every step of the
-              development process. <br />I am someone that loves to learn from
-              others, so collaborating with other developers to brainstorm,
-              debugg, share ideas and build something grater than what one
-              person can do is a goal that I lok forward to. I believe you one
-              can achieve excelent result by exchanging of knowledge,
-              constructive feedback and mutual support. I'm commited to working
-              in a team to achieve outstanding success.
-            </p>
-            <p class="leftp">
-              Aside Web development I am interested in learning, Reading books,
-              Travelling, living healthy, staying fit and helping people in
-              anyway I can.
-            </p>
-          </section>
-          <hr />
-          <section id="projects" class="project-sections">
-            <h3 class="h3">My Projects</h3>
-            <!-- Project 1 -->
-            <div class="myProjects">
-              <div class="project-item">
-                <img
-                  src="/images/houses.jpg"
-                  alt="Project 1"
-                  width="500"
-                  height="500"
-                  class="project-images"
-                />
-                <h3 class="h3p">project 1</h3>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos
-                  laudantium pariatur voluptatibus distinctio excepturi ullam
-                  hic sint nobis laborum dolorem, sit nesciunt labore,
-                  laboriosam optio repudiandae perspiciatis expedita enim
-                  asperiores.
-                </p>
-                <a href="#" target="_blank">View on Github</a>
-              </div>
-              <!-- Project 2 -->
+      <div class="main-containr">
+        <div class="hero">
+          <div class="profile-card">
+            <img
+              src="/images/profile-pic.jpg"
+              alt="Profile Picture"
+              width="500"
+              height="500"
+              class="profile-img"
+            />
+            <h1 class="name">Marvellous Ediagbonya</h1>
+            <p class="card-p">Front-End Developer</p>
+          </div>
 
-              <div class="project-item">
-                <img
-                  src="/images/redlight.jpg"
-                  alt="Project 2"
-                  width="500"
-                  height="500"
-                  class="project-images"
-                />
-                <h3 class="h3p">project 2</h3>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos
-                  laudantium pariatur voluptatibus distinctio excepturi ullam
-                  hic sint nobis laborum dolorem, sit nesciunt labore,
-                  laboriosam optio repudiandae perspiciatis expedita enim
-                  asperiores.
-                </p>
-                <a href="#" target="_blank">View on Github</a>
-              </div>
-              <!-- Project 3 -->
-
-              <div class="project-item">
-                <img
-                  src="/images/restuarant.jpg"
-                  alt="Project 3"
-                  width="500"
-                  height="500"
-                  class="project-images"
-                />
-                <h3 class="h3p">project 3</h3>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos
-                  laudantium pariatur voluptatibus distinctio excepturi ullam
-                  hic sint nobis laborum dolorem, sit nesciunt labore,
-                  laboriosam optio repudiandae perspiciatis expedita enim
-                  asperiores.
-                </p>
-                <a href="#" target="_blank">View on Github</a>
-              </div>
-              <!-- Project 4 -->
-
-              <div class="project-item">
-                <img
-                  src="/images/snowlake.jpg"
-                  alt="Project 4"
-                  width="500"
-                  height="500"
-                  class="project-images"
-                />
-                <h3 class="h3p">project 4</h3>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos
-                  laudantium pariatur voluptatibus distinctio excepturi ullam
-                  hic sint nobis laborum dolorem, sit nesciunt labore,
-                  laboriosam optio repudiandae perspiciatis expedita enim
-                  asperiores.
-                </p>
-                <a href="#" target="_blank">View on Github</a>
-              </div>
-              <!-- Project 5 -->
-
-              <div class="project-item">
-                <img
-                  src="/images/stars.jpg"
-                  alt="Project 5"
-                  width="500"
-                  height="500"
-                  class="project-images"
-                />
-                <h3 class="h3p">project 5</h3>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos
-                  laudantium pariatur voluptatibus distinctio excepturi ullam
-                  hic sint nobis laborum dolorem, sit nesciunt labore,
-                  laboriosam optio repudiandae perspiciatis expedita enim
-                  asperiores.
-                </p>
-                <a href="#" target="_blank">View on Github</a>
-              </div>
+          <section class="welcome-section">
+            <h2>Welcome</h2>
+            <div>
+              <hr />
+              <p class="welcomep">
+                Hello! welcome to my portfolio.
+                <br />
+                &nbsp;I have always been curious to know how the web work, I
+                have often asked myself; "How's it that there are different
+                websites online? How does it get there? Can I do something
+                similar?. <br />
+                <br />
+                I often ask myself this question until I researched and found
+                out how it works. I was intrigued and since then my passion for
+                it has increased, I made a vow to make interactive,
+                User-friendly and stylish website.. <br />
+                <br />
+                To master this skill I decide to learn about HTML, CSS and
+                Javascript to understand how the client side of web development
+                works before I will go on to master the server side. <br />
+                <br />
+                Below you will find some of the projects that I have worked on,
+                I hope you find them interesting and consider me for a job
+                position in your organisation.
+              </p>
             </div>
           </section>
         </div>
+        <!--My projet section-->
+        <hr />
+        <section id="projects" class="project-sections">
+          <h3 class="h3">My Projects</h3>
+          <!-- Project 1 -->
+          <div class="myProjects">
+            <div class="project-item">
+              <img
+                src="/images/houses.jpg"
+                alt="Project 1"
+                width="500"
+                height="500"
+                class="project-images"
+              />
+              <h3 class="h3p">project 1</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos
+                laudantium pariatur voluptatibus distinctio excepturi ullam hic
+                sint nobis laborum dolorem, sit nesciunt labore, laboriosam
+                optio repudiandae perspiciatis expedita enim asperiores.
+              </p>
+              <a href="#" target="_blank">View on Github</a>
+            </div>
+            <!-- Project 2 -->
+
+            <div class="project-item">
+              <img
+                src="/images/redlight.jpg"
+                alt="Project 2"
+                width="500"
+                height="500"
+                class="project-images"
+              />
+              <h3 class="h3p">project 2</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos
+                laudantium pariatur voluptatibus distinctio excepturi ullam hic
+                sint nobis laborum dolorem, sit nesciunt labore, laboriosam
+                optio repudiandae perspiciatis expedita enim asperiores.
+              </p>
+              <a href="#" target="_blank">View on Github</a>
+            </div>
+            <!-- Project 3 -->
+
+            <div class="project-item">
+              <img
+                src="/images/restuarant.jpg"
+                alt="Project 3"
+                width="500"
+                height="500"
+                class="project-images"
+              />
+              <h3 class="h3p">project 3</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos
+                laudantium pariatur voluptatibus distinctio excepturi ullam hic
+                sint nobis laborum dolorem, sit nesciunt labore, laboriosam
+                optio repudiandae perspiciatis expedita enim asperiores.
+              </p>
+              <a href="#" target="_blank">View on Github</a>
+            </div>
+            <!-- Project 4 -->
+
+            <div class="project-item">
+              <img
+                src="/images/mobiles54.jpg"
+                alt="blog-website"
+                width="100"
+                height="100"
+                class="project-images cube"
+              />
+
+              <h3 class="h3p">Blog Website</h3>
+              <p>
+                This is a single page blog website, I built this website with
+                responsiveness in mind. In large devices the articles are
+                arranged in rows but in small devices it becomes a single column
+                and the navigtion changes t0 accomodate mobile devices and make
+                it easier for mobile users.
+              </p>
+              <a
+                href="https://marveeygoodlife.github.io/BLOG-WEBSITE/"
+                target="_blank"
+                >View on Github</a
+              >
+            </div>
+            <!-- Project 5 -->
+
+            <div class="project-item">
+              <img
+                src="/images/form.jpg"
+                alt="Form website"
+                width="500"
+                height="400"
+                class="project-images"
+              />
+              <h3 class="h3p">A login form</h3>
+              <p>
+                This is a single form page that I built from scratch using just
+                HTML & CSS. The page possesses all necessary validation a form
+                needs, It collect user data and where the data is wrong, the
+                form prompt the user to user to enter the data in a correct way.
+              </p>
+              <a
+                href="https://marveeygoodlife.github.io/Form-WEBPAGE/"
+                target="_blank"
+                >View on Github</a
+              >
+            </div>
+          </div>
+        </section>
         <!--END of My projet section-->
       </div>
     </main>
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const menuToggle = document.querySelector(".nav-toggle");
-        const navMenu = document.querySelector("#navbar");
+    <hr />
+    <script src="script.js"></script>
+    <!--footer part-->
+    <footer>
+      <div class="div-container" id="Contact">
+        <!--Start of contact section-->
 
-        menuToggle.addEventListener("click", () => {
-          navMenu.classList.toggle("active");
-        });
-      });
-    </script>
+        <section class="contact-section">
+          <h2>CONTACT ME</h2>
+
+          <div class="anchor">
+            <a href="mailto:marveey8027@gmail.com" target="_blank">Gmail</a>
+            <a
+              href="ttps://x.com/livingstone_z_"
+              target="_blank"
+              class="Twitter"
+              >Twitter (X)</a
+            >
+            <a
+              href="https://www.linkedin.com/in/marvellous-ediagbonya-064b50147/"
+              target="_blank"
+              >Linkedin</a
+            >
+            <a
+              href="https://github.com/marveeygoodlife?tab=repositories"
+              target="_blank"
+              >Github</a
+            >
+          </div>
+        </section>
+      </div>
+      <small style="display: block; text-align: center"
+        >&copy;&nbsp;Copyright 2024, Marveey Goodlife</small
+      >
+      <!--End of contact section-->
+    </footer>
   </body>
-  <!--footer part-->
-  <footer>
-    <div class="div-container" id="Contact">
-      <!--Start of contact section-->
-
-      <section class="contact-section">
-        <h2>Here's my contact Information, I would like to hear from you</h2>
-        <p class="paragraph">
-          What's your developer environment like? <br />
-          Let me know below.
-        </p>
-
-        <div class="anchor">
-          <a href="mailto:marveey8027@gmail.com" target="_blank"
-            ><i class="fa-solid fa-envelope"></i> Gmail</a
-          >
-          <a href="ttps://x.com/livingstone_z_" target="_blank"
-            ><i class="fa-brands fa-square-x-twitter"></i> Twitter x</a
-          >
-          <a
-            href="https://www.linkedin.com/in/marvellous-ediagbonya-064b50147/"
-            target="_blank"
-            ><i class="fa-brands fa-linkedin"></i> Linkedin</a
-          >
-          <a
-            href="https://github.com/marveeygoodlife?tab=repositories"
-            target="_blank"
-            ><i class="fa-brands fa-github"></i> Github</a
-          >
-        </div>
-      </section>
-    </div>
-    <small style="display: block; text-align: center"
-      >&copy;&nbsp;Copyright 2024, Marveey Goodlife</small
-    >
-    <!--End of contact section-->
-  </footer>
 </html>
