@@ -1,6 +1,7 @@
 /* DEFAULT STYLE FOR MOBILE DEVICES! CONSIDERING DESIGNING FOR USER FIRST IS A GOOD PRACTICE BECAUSE MOST PEOPLE USE PHONE NOWADAYS */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-/* Custom properties/variables */
+
 :root {
   --main-white: #f0f0f0;
   --main-red: #be3144;
@@ -9,7 +10,23 @@
   --main-off-white: #F5F5F5;
   --main-light-gray: #F0F0F0;
   --menu-toggle-dark: #333;
+  --body-font-family: "Roboto", "Open Sans", "Lato", "Merriweather";
+  --header-font-family: "Oswald", "Montserrat", "Playfair";
+  --small-screen-font-size: 1rem;
+  --medium-screen-font-size: 1.125rem;
+  --large-screen-font-size: 1.25rem;
+  --small-H1-font-size: 24px;
+  --medium-H1-font-size: 28px;
+  --large-H1-font-size: 32px;
+  --small-H2-font-size: 21px;
+  --medium-H2-font-size: 25px;
+  --large-H2-font-size: 29px;
+  --small-text-font-size: 12px;
+  --medium-small-text-size: 14px;
+  --large-small-text-size: 16px;
 }
+
+
 
 /* General Styles */
 *,
@@ -21,13 +38,13 @@
 
 html {
   box-sizing: border-box;
-  font-size: 1em;
   scroll-behavior: smooth;
 }
 
 body {
   background-color: var(--main-gray);
-  font-family: 'Poppins', sans-serif, Tahoma, monospace;
+  font-family: var(--body-font-family);
+  font-size: var(--small-screen-font-size);
   color: var(--main-off-white);
   display: flex;
   flex-direction: column;
@@ -35,7 +52,17 @@ body {
   font-weight: bold;
 }
 
+h1 {
+  font-size: var(--small-H1-font-size);
+}
 
+h2 {
+  font-size: var(--small-H2-font-size);
+}
+
+h3 {
+  font-size: 18px;
+}
 
 /* General style ends */
 
@@ -133,9 +160,8 @@ body {
 h1,
 h2,
 .h3 {
-  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  font-family: var(--header-font-family);
   color: var(--main-white);
-  font-size: 2rem;
   margin: 1rem;
 }
 
@@ -326,7 +352,7 @@ img {
 }
 
 .project-item .h3p {
-  font-size: 1.5rem;
+  font-size: 19px;
   color: var(--main-gray);
   margin-top: 1.1rem;
   margin-bottom: auto;
@@ -355,7 +381,7 @@ img {
 /* THIS style become active when the device is 600px and higher */
 @media (min-width: 600px) {
   body {
-    font-size: 2.1rem;
+    font-size: var(--medium-screen-font-size);
   }
 
   header {
@@ -403,7 +429,6 @@ img {
 
   h1,
   h2 {
-    font-size: 2.5rem;
     margin-left: 20px;
   }
 
@@ -434,13 +459,25 @@ img {
   }
 
   footer h2 {
-    font-size: 1.3rem;
+    font-size: var(--medium-H2-size);
   }
 
 
 
+  h1 {
+    font-size: var(--medium-H1-font-size);
+  }
+
+  h2 {
+    font-size: var(--medium-H2-font-size);
+  }
+
+  h3 {
+    font-size: 19px;
+  }
+
   small {
-    font-size: 1.8rem;
+    font-size: var(--medium-small-text-size);
   }
 }
 
@@ -449,6 +486,7 @@ img {
 */
 @media (min-width: 1024px) {
   body {
+    font-size: var(--large-screen-font-size);
     display: grid;
     grid-template-areas:
       "header header header"
@@ -468,13 +506,16 @@ img {
     width: 100%;
   }
 
+  h1 {
+    font-size: var(--large-H1-font-size);
+  }
 
   h2 {
-    font-size: 5rem;
+    font-size: var(--large-H2-font-size);
   }
 
   #projects .h3 {
-    font-size: 3rem;
+    font-size: 22px;
     margin: 1rem;
   }
 
@@ -572,7 +613,7 @@ img {
   }
 
   small {
-    font-size: 1.5rem;
+    font-size: var(--large-small-text-size);
     margin: 1rem;
   }
 }
