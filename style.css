@@ -82,25 +82,27 @@ h3 {
 
 /* Navigation Styles start*/
 .nav-toggle {
+  border: none;
   display: flex;
   /* set toggle to flex */
   flex-direction: column;
   /* make toggle bar  ontop each other */
   justify-content: space-between;
   /* add space between toggle bars */
-  width: 50px;
+  width: 25px;
   /* button toggle  width */
-  height: 50px;
+  height: 25px;
   /* toggle button height */
   cursor: pointer;
   /* change cursor to pointer on hover*/
+  background-color: inherit;
 }
 
 /* toggle span- bar style */
 .nav-toggle .bar {
   width: 100%;
   /* make each bar take the toggle width */
-  height: 3px;
+  height: 2px;
   /* bar height */
   background-color: var(--menu-toggle-dark);
 }
